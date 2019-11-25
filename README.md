@@ -1,0 +1,2 @@
+# React-tutorial
+Reactチュートリアルで用いられるまるばつゲームをTypescriptを使って作成する
