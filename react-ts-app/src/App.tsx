@@ -7,10 +7,12 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>初めの部分は多くがいらないと思うからcomponentsとかpagesとかのディレクトリを作って始めてください！</p>
+        <p>
+          初めの部分は多くがいらないと思うからcomponentsとかpagesとかのディレクトリを作って始めてください！
+        </p>
       </header>
     </div>
   );
-}
+};
 
 export default App;
