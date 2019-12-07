@@ -40,4 +40,4 @@ Master ブランチで作業したり、develop ブランチで作業するこ�
 ## typescript の format について
 
 - mac なら option + shift + F キー
-- windows なら ctrl + shift + F キー(ここは確かめて違ったら変更する)
+- windows なら Shift + alt + fキー(ここは確かめて違ったら変更する)
