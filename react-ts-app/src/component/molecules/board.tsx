@@ -1,7 +1,9 @@
 import React from 'react';
 import  Square  from '../atom/square';
+import Grid from '@material-ui/core/Grid';
+
 type BoardProps = {
-  squares: Array<string | null>;
+  squares: Array<any | null>;
   onClick: (i: number) => void;
 };
 const Board = (props: BoardProps) => {
@@ -10,34 +12,29 @@ const Board = (props: BoardProps) => {
   };
 
   return (
-    <div>
-      <div className="board-row">
+    <div style={board}>
+      <Grid container alignItems="center">
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
-      </div>
-      <div className="board-row">
+      </Grid>
+      <Grid container alignItems="center">
         {renderSquare(3)}
         {renderSquare(4)}
         {renderSquare(5)}
-      </div>
-      <div className="board-row">
+      </Grid>
+      <Grid container alignItems="center">
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
-      </div>
+      </Grid>
     </div>
   );
 };
 
+const board = {
+  marginLeft: '25px',
+  marginTop: '5px',
+};
+
 export default Board;
-
-// .board-row:after {
-//   clear: both;
-//   content: "";
-//   display: table;
-// }
-
-// ol, ul {
-//   padding-left: 30px;
-// }
